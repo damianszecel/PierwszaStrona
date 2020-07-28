@@ -10,14 +10,14 @@ namespace FirstSite.Models
     {
         public int CourseID { get; set; }
         public int KategoriaId { get; set; }
-        [Required(ErrorMessage = "Wprowadz nazwe kursu")]
-        [StringLength(100)]
+        //[Required(ErrorMessage = "Wprowadz nazwe kursu")]
+        //[StringLength(100)]
         public string TitleCourse { get; set; }
-        [Required(ErrorMessage = "Wprowadz autora kursu")]
-        [StringLength(50)]
+        //[Required(ErrorMessage = "Wprowadz autora kursu")]
+        //[StringLength(50)]
         public string AuthorCourse { get; set; }
         public DateTime AddingDate { get; set; }
-        [StringLength(100)]
+        //[StringLength(100)]
         public string FileName { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
