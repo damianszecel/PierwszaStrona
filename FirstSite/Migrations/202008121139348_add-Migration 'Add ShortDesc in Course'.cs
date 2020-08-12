@@ -1,0 +1,18 @@
+﻿namespace FirstSite.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class addMigrationAddShortDescinCourse : DbMigration
+    {
+        public override void Up()
+        {
+            AddColumn("dbo.Course", "ShortDesc", c => c.String());
+        }
+        
+        public override void Down()
+        {
+            DropColumn("dbo.Course", "ShortDesc");
+        }
+    }
+}

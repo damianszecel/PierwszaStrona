@@ -6,6 +6,7 @@ namespace FirstSite.Models
 {
     public class Kategoria
     {
+        [Key]
         public int KategoriaId { get; set; }
         //[Required(ErrorMessage = "Wprowadz nazwe kategorii")]
         //[StringLength(100)]

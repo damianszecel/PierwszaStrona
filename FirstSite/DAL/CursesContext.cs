@@ -15,6 +15,11 @@ namespace FirstSite.DAL
 
         }
 
+        static CursesContext()
+        {
+            Database.SetInitializer<CursesContext>(new CursesInitializer());
+        }
+
         public DbSet<Course> Courses { get; set; }
         public DbSet<Kategoria> Kategories { get; set; }
         public DbSet<Order> Orders { get; set; }

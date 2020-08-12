@@ -1,7 +1,10 @@
-﻿namespace FirstSite.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace FirstSite.Models
 {
     public class OrderPosition
     {
+        [Key]
         public int OrderPositionId { get; set; }
         public int OrderId { get; set; }
         public int CourseId { get; set; }

@@ -8,6 +8,7 @@ namespace FirstSite.Models
 {
     public class Course
     {
+        [Key]
         public int CourseID { get; set; }
         public int KategoriaId { get; set; }
         //[Required(ErrorMessage = "Wprowadz nazwe kursu")]
@@ -23,6 +24,7 @@ namespace FirstSite.Models
         public decimal Price { get; set; }
         public bool Bestseller { get; set; }
         public bool Hidden { get; set; }
+        public string ShortDesc { get; set; }
 
         public virtual Kategoria Kategoria { get; set; }
     }

@@ -14,9 +14,8 @@ namespace FirstSite.Controllers
 
         public ActionResult Index()
         {
-            Kategoria nowakategoria = new Kategoria { KategoriaName = "Pierwsza kategoria", KategoriaDescription = "Opis Pierwszej Kategorii" };
-            db.Kategories.Add(nowakategoria);
-            db.SaveChanges();
+            var listaKategorii = db.Kategories.ToList();
+
             return View();
         }
     }

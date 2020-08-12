@@ -8,6 +8,7 @@ namespace FirstSite.Models
 {
     public class Order
     {
+        [Key]
         public int OrdersId { get; set; }
         //[Required(ErrorMessage = "Wprowadz imie")]
         //[StringLength(30)]
